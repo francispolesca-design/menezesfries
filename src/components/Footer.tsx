@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-sm text-white/80">
-            © 2024 Round Fries. Todos os direitos reservados.
+            © 2025 Round Fries. Todos os direitos reservados.
           </p>
           <div className="mt-4 flex justify-center gap-4">
             <span className="text-3xl text-white">○</span>
