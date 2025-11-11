@@ -63,6 +63,12 @@ export default {
           dark: "hsl(var(--squid-dark))",
           light: "hsl(var(--squid-light))",
         },
+        fries: {
+          gold: "hsl(var(--fries-gold))",
+          orange: "hsl(var(--fries-orange))",
+          yellow: "hsl(var(--fries-yellow))",
+          crispy: "hsl(var(--fries-crispy))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

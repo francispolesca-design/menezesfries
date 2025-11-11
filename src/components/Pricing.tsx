@@ -36,8 +36,12 @@ const Pricing = () => {
   };
 
   return (
-    <section id="precos" className="py-24 px-4 bg-muted/30">
-      <div className="max-w-7xl mx-auto">
+    <section id="precos" className="py-24 px-4 bg-gradient-to-br from-background via-fries-yellow/20 to-fries-orange/30 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-10 right-10 w-32 h-32 bg-fries-gold/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4">
             Nosso <span className="text-primary">Cardápio</span>

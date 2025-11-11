@@ -34,8 +34,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contato" className="py-24 px-4 bg-muted/30">
-      <div className="max-w-7xl mx-auto">
+    <section id="contato" className="py-24 px-4 bg-gradient-to-br from-fries-yellow/30 via-fries-orange/20 to-primary/20 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-fries-gold/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/20 blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4">
             Entre em <span className="text-primary">Contato</span>
