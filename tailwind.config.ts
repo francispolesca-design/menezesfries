@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        squid: {
+          pink: "hsl(var(--squid-pink))",
+          teal: "hsl(var(--squid-teal))",
+          dark: "hsl(var(--squid-dark))",
+          light: "hsl(var(--squid-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
