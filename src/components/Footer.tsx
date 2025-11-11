@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-squid-dark via-fries-crispy to-squid-dark text-squid-light py-12 px-4 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-squid-dark via-fries-crispy to-squid-dark text-white py-12 px-4 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 right-20 w-32 h-32 bg-fries-gold/10 rounded-full blur-2xl"></div>
       <div className="absolute bottom-10 left-20 w-40 h-40 bg-primary/10 blur-2xl"></div>
@@ -13,7 +13,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold">Round Fries</span>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-white/80">
               Batatas fritas artesanais com a intensidade do jogo. Cada porção é uma vitória de sabor.
             </p>
           </div>
@@ -22,17 +22,17 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#precos" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#precos" className="text-white/80 hover:text-fries-gold transition-colors">
                   Cardápio
                 </a>
               </li>
               <li>
-                <a href="#organizadores" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#organizadores" className="text-white/80 hover:text-fries-gold transition-colors">
                   Nossa Equipe
                 </a>
               </li>
               <li>
-                <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#contato" className="text-white/80 hover:text-fries-gold transition-colors">
                   Contato
                 </a>
               </li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div>
             <h3 className="font-bold text-lg mb-4">Horário de Funcionamento</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-white/80">
               <li>Segunda a Sexta: 10h às 22h</li>
               <li>Sábado: 11h às 23h</li>
               <li>Domingo: Fechado</li>
@@ -49,14 +49,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
+        <div className="border-t border-white/20 pt-8 text-center">
+          <p className="text-sm text-white/80">
             © 2024 Round Fries. Todos os direitos reservados.
           </p>
           <div className="mt-4 flex justify-center gap-4">
-            <span className="text-3xl">○</span>
-            <span className="text-3xl text-primary">△</span>
-            <span className="text-3xl">□</span>
+            <span className="text-3xl text-white">○</span>
+            <span className="text-3xl text-fries-gold">△</span>
+            <span className="text-3xl text-white">□</span>
           </div>
         </div>
       </div>
