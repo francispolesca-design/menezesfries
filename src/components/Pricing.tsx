@@ -18,7 +18,6 @@ const pricingOptions = [
     description: "Ideal para compartilhar",
     features: ["400g de batatas", "2 molhos à escolha", "Tempero especial", "Embalagem Round Fries", "Brinde exclusivo"],
     symbol: "△",
-    popular: true,
   },
   {
     id: 3,
@@ -55,16 +54,8 @@ const Pricing = () => {
           {pricingOptions.map((option) => (
             <Card 
               key={option.id} 
-              className={`relative transition-all hover:shadow-xl ${
-                option.popular ? "border-primary border-2 scale-105" : ""
-              }`}
+              className="relative transition-all hover:shadow-xl"
             >
-              {option.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold">
-                  Mais Popular
-                </div>
-              )}
-              
               <CardHeader className="text-center pb-8">
                 <div className="mx-auto mb-4 w-20 h-20 flex items-center justify-center border-4 border-primary rounded-lg text-4xl font-bold text-primary">
                   {option.symbol}
@@ -85,7 +76,7 @@ const Pricing = () => {
                 </ul>
 
                 <Button 
-                  variant={option.popular ? "hero" : "outline"} 
+                  variant="outline" 
                   className="w-full"
                   onClick={scrollToContact}
                 >
@@ -99,9 +90,6 @@ const Pricing = () => {
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-4">
             <strong>Molhos disponíveis:</strong> Ketchup, Maionese, Barbecue, Cheddar, Ranch
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Entregas via WhatsApp • Retirada no local disponível
           </p>
         </div>
       </div>
