@@ -1,10 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-squid-dark via-fries-crispy to-squid-dark text-white py-12 px-4 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-10 right-20 w-32 h-32 bg-fries-gold/10 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-10 left-20 w-40 h-40 bg-primary/10 blur-2xl"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
+    <footer className="bg-black text-white py-12 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">

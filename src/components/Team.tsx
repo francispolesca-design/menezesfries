@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users } from "lucide-react";
+import teamPhoto from "@/assets/team-photo.jpg";
 
 const Team = () => {
   return (
@@ -10,9 +10,6 @@ const Team = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 mb-6">
-            <Users className="w-8 h-8 text-secondary" />
-          </div>
           <h2 className="text-5xl font-bold mb-4">
             Nossa <span className="text-primary">Equipe</span>
           </h2>
@@ -22,13 +19,10 @@ const Team = () => {
           {/* Left side - Text content */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              Somos uma equipe apaixonada por gastronomia e dedicada a trazer a você as melhores batatas fritas artesanais da região. 
-              Com a temática inspirada em Round Six, cada membro do nosso time trabalha com excelência e comprometimento para 
-              garantir que cada porção seja uma experiência única e memorável.
+              A Round Fries nasceu da paixão por batatas fritas perfeitas e do desejo de proporcionar momentos deliciosos para nossos clientes.
             </p>
             <p className="text-lg text-foreground leading-relaxed">
-              Nossa missão é transformar um simples alimento em uma verdadeira obra de arte culinária, combinando ingredientes 
-              selecionados, técnicas especiais de preparo e um atendimento que faz toda a diferença.
+              Nosso compromisso é com a qualidade: selecionamos as melhores batatas, fritamos no ponto ideal de crocância e oferecemos molhos exclusivos que tornam cada porção uma experiência única.
             </p>
             <div className="flex items-center gap-4 pt-4">
               <div className="flex gap-2">
@@ -42,18 +36,14 @@ const Team = () => {
             </div>
           </div>
 
-          {/* Right side - Photo placeholder */}
-          <Card className="overflow-hidden h-full min-h-[400px] bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-dashed">
-            <CardContent className="h-full flex items-center justify-center p-12">
-              <div className="text-center">
-                <Users className="w-24 h-24 text-primary/30 mx-auto mb-4" />
-                <p className="text-muted-foreground text-lg">
-                  Espaço para foto da equipe
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">
-                  400 x 400 pixels recomendado
-                </p>
-              </div>
+          {/* Right side - Team Photo */}
+          <Card className="overflow-hidden h-full min-h-[400px]">
+            <CardContent className="h-full p-0">
+              <img
+                src={teamPhoto}
+                alt="Equipe Round Fries"
+                className="w-full h-full object-cover"
+              />
             </CardContent>
           </Card>
         </div>

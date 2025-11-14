@@ -71,11 +71,11 @@ const Hero = () => {
         <div className="mt-20 grid grid-cols-2 gap-8 max-w-2xl mx-auto">
           <div className="text-center bg-white/90 rounded-lg p-6 backdrop-blur shadow-lg">
             <div className="text-4xl font-bold text-primary mb-2">100%</div>
-            <div className="text-sm text-foreground uppercase tracking-wide font-semibold">Artesanal</div>
+            <div className="text-sm text-black uppercase tracking-wide font-semibold">Artesanal</div>
           </div>
           <div className="text-center bg-white/90 rounded-lg p-6 backdrop-blur shadow-lg">
             <div className="text-4xl font-bold text-primary mb-2">5★</div>
-            <div className="text-sm text-foreground uppercase tracking-wide font-semibold">Avaliação</div>
+            <div className="text-sm text-black uppercase tracking-wide font-semibold">Avaliação</div>
           </div>
         </div>
       </div>
