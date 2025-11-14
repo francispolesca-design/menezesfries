@@ -1,30 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import batataImage from "@/assets/batata.jpg";
 
 const pricingOptions = [
   {
     id: 1,
     name: "Porção Individual",
     price: "R$ 15",
-    description: "Perfeita para matar a fome",
-    features: ["200g de batatas", "Molho à escolha", "Tempero especial", "Embalagem Round Fries"],
     symbol: "○",
   },
   {
     id: 2,
-    name: "Porção Dupla",
-    price: "R$ 28",
-    description: "Ideal para compartilhar",
-    features: ["400g de batatas", "2 molhos à escolha", "Tempero especial", "Embalagem Round Fries", "Brinde exclusivo"],
+    name: "Batata Frita",
+    price: "R$ 12",
     symbol: "△",
+    image: batataImage,
   },
   {
     id: 3,
     name: "Porção Família",
     price: "R$ 50",
-    description: "Para toda a família",
-    features: ["800g de batatas", "4 molhos à escolha", "Tempero especial", "Embalagem Round Fries", "2 brindes exclusivos", "Bebida inclusa"],
     symbol: "□",
   },
 ];
@@ -57,15 +52,24 @@ const Pricing = () => {
               className="relative transition-all hover:shadow-xl"
             >
               <CardHeader className="text-center pb-8">
-                <div className="mx-auto mb-4 w-20 h-20 flex items-center justify-center border-4 border-primary rounded-lg text-4xl font-bold text-primary">
-                  {option.symbol}
-                </div>
+                {option.image ? (
+                  <div className="mx-auto mb-4 w-full h-48 overflow-hidden rounded-lg">
+                    <img 
+                      src={option.image} 
+                      alt={option.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="mx-auto mb-4 w-20 h-20 flex items-center justify-center border-4 border-primary rounded-lg text-4xl font-bold text-primary">
+                    {option.symbol}
+                  </div>
+                )}
                 <CardTitle className="text-2xl mb-2">{option.name}</CardTitle>
                 <div className="text-5xl font-bold text-primary mt-4">{option.price}</div>
               </CardHeader>
 
               <CardContent>
-
                 <Button 
                   variant="outline" 
                   className="w-full"
@@ -78,9 +82,12 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-4">
-            <strong>Molhos disponíveis:</strong> Ketchup, Maionese, Barbecue, Cheddar, Ranch
+        <div className="mt-16 text-center space-y-3">
+          <p className="text-muted-foreground">
+            <strong>Molhos disponíveis:</strong> Requeijão, Cheddar, Maionese, Ketchup e Molho Rosé
+          </p>
+          <p className="text-muted-foreground">
+            <strong>Completos disponíveis:</strong> Calabresa
           </p>
         </div>
       </div>

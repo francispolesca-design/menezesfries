@@ -19,7 +19,7 @@ const Team = () => {
           {/* Left side - Text content */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              A Round Fries nasceu da paixão por batatas fritas perfeitas e do desejo de proporcionar momentos deliciosos para nossos clientes.
+              A Menezes Fries nasceu da paixão por batatas fritas perfeitas e do desejo de proporcionar momentos deliciosos para nossos clientes.
             </p>
             <p className="text-lg text-foreground leading-relaxed">
               Nosso compromisso é com a qualidade: selecionamos as melhores batatas, fritamos no ponto ideal de crocância e oferecemos molhos exclusivos que tornam cada porção uma experiência única.
@@ -41,7 +41,7 @@ const Team = () => {
             <CardContent className="h-full p-0">
               <img
                 src={teamPhoto}
-                alt="Equipe Round Fries"
+                alt="Equipe Menezes Fries"
                 className="w-full h-full object-cover"
               />
             </CardContent>
