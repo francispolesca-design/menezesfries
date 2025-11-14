@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Instagram</h3>
-                  <p className="text-muted-foreground">@roundfries</p>
+                  <p className="text-muted-foreground">@menezesfries</p>
                 </div>
               </CardContent>
             </Card>

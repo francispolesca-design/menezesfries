@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Round Fries - Batata Frita Artesanal"
+          alt="Menezes Fries - Batata Frita Artesanal"
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-fries-yellow/70 via-fries-orange/80 to-primary/90"></div>
@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="mb-8 inline-block">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-bold text-2xl shadow-lg">
-              R
+              M
             </div>
             <div className="w-16 h-16 bg-white flex items-center justify-center text-primary font-bold text-2xl shadow-lg" style={{ clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)" }}>
               F
@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
-          Round <span className="text-squid-dark">Fries</span>
+          Menezes <span className="text-squid-dark">Fries</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-2xl mx-auto drop-shadow-md font-medium">

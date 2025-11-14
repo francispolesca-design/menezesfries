@@ -8,10 +8,10 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
                 R
               </div>
-              <span className="text-xl font-bold">Round Fries</span>
+              <span className="text-xl font-bold">Menezes Fries</span>
             </div>
             <p className="text-sm text-white/80">
-              Batatas fritas artesanais com a intensidade do jogo. Cada porção é uma vitória de sabor.
+              Batatas fritas artesanais. Cada porção é uma vitória de sabor.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-sm text-white/80">
-            © 2025 Round Fries. Todos os direitos reservados.
+            © 2025 Menezes Fries. Todos os direitos reservados.
           </p>
           <div className="mt-4 flex justify-center gap-4">
             <span className="text-3xl text-white">○</span>
