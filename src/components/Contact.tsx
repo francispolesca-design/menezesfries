@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Instagram } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 import { toast } from "sonner";
 import { useState } from "react";
 
@@ -66,18 +66,6 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="email">Email ou WhatsApp</Label>
-                  <Input
-                    id="email"
-                    type="text"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="mt-2"
-                  />
-                </div>
-
-                <div>
                   <Label htmlFor="message">Mensagem</Label>
                   <Textarea
                     id="message"
@@ -112,26 +100,13 @@ const Contact = () => {
 
             <Card className="hover:shadow-lg transition-all">
               <CardContent className="pt-6 pb-6 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
-                  <Mail className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-1">Email</h3>
-                  <p className="text-muted-foreground">contato@roundfries.com</p>
-                  <p className="text-sm text-muted-foreground mt-1">Respondemos em até 24h</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-all">
-              <CardContent className="pt-6 pb-6 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Localização</h3>
-                  <p className="text-muted-foreground">Rua das Batatas, 456</p>
-                  <p className="text-muted-foreground">São Paulo - SP</p>
+                  <p className="text-muted-foreground">Escola Estadual Padre Menezes</p>
+                  <p className="text-muted-foreground">Avenida Belmiro Salomão</p>
                 </div>
               </CardContent>
             </Card>
@@ -144,7 +119,6 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-lg mb-1">Instagram</h3>
                   <p className="text-muted-foreground">@roundfries</p>
-                  <p className="text-sm text-muted-foreground mt-1">Siga para promoções exclusivas</p>
                 </div>
               </CardContent>
             </Card>

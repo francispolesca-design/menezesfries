@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
@@ -61,19 +61,10 @@ const Pricing = () => {
                   {option.symbol}
                 </div>
                 <CardTitle className="text-2xl mb-2">{option.name}</CardTitle>
-                <CardDescription className="text-base">{option.description}</CardDescription>
                 <div className="text-5xl font-bold text-primary mt-4">{option.price}</div>
               </CardHeader>
 
               <CardContent>
-                <ul className="space-y-3 mb-6">
-                  {option.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
 
                 <Button 
                   variant="outline" 
