@@ -3,7 +3,7 @@ import teamPhoto from "@/assets/team-photo.jpg";
 
 const Team = () => {
   return (
-    <section id="organizadores" className="py-24 px-4 bg-gradient-to-br from-fries-orange/30 via-background to-fries-yellow/20 relative overflow-hidden">
+    <section id="equipe" className="py-24 px-4 bg-gradient-to-br from-fries-orange/30 via-background to-fries-yellow/20 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-1/3 w-32 h-32 bg-fries-gold/20 blur-3xl" style={{ clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)" }}></div>
