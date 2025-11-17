@@ -23,12 +23,12 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#precos" className="text-white/80 hover:text-fries-gold transition-colors">
+                <a href="#cardapio" className="text-white/80 hover:text-fries-gold transition-colors">
                   Cardápio
                 </a>
               </li>
               <li>
-                <a href="#organizadores" className="text-white/80 hover:text-fries-gold transition-colors">
+                <a href="#equipe" className="text-white/80 hover:text-fries-gold transition-colors">
                   Nossa Equipe
                 </a>
               </li>
