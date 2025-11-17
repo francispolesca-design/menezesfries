@@ -32,7 +32,7 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="Menezes Fries Logo" 
-            className="w-32 h-32 mx-auto drop-shadow-2xl"
+            className="w-48 h-48 mx-auto drop-shadow-2xl"
           />
         </div>
 

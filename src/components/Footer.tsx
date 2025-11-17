@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12 px-4">
@@ -5,9 +7,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
-                R
-              </div>
+              <img 
+                src={logo} 
+                alt="Menezes Fries Logo" 
+                className="w-10 h-10"
+              />
               <span className="text-xl font-bold">Menezes Fries</span>
             </div>
             <p className="text-sm text-white/80">
