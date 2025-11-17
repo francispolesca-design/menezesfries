@@ -8,28 +8,33 @@ import { toast } from "sonner";
 import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulate form submission
-    toast.success("Mensagem enviada com sucesso!", {
-      description: "Retornaremos em breve pelo WhatsApp.",
-    });
+    if (!message.trim()) {
+      toast.error("Por favor, escreva uma mensagem.");
+      return;
+    }
 
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value,
+    // Open Instagram DM with the message
+    const instagramUsername = "menezesfries";
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Instagram doesn't support pre-filled messages in DMs via URL, so we'll copy the message and open Instagram
+    navigator.clipboard.writeText(message).then(() => {
+      toast.success("Mensagem copiada!", {
+        description: "Abrindo Instagram... Cole a mensagem no direct.",
+      });
+      
+      // Open Instagram profile
+      window.open(`https://www.instagram.com/${instagramUsername}/`, "_blank");
+      
+      // Reset form
+      setMessage("");
+    }).catch(() => {
+      toast.error("Erro ao copiar mensagem. Tente novamente.");
     });
   };
 
@@ -55,29 +60,19 @@ const Contact = () => {
             <CardContent className="pt-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name">Nome</Label>
-                  <Input
-                    id="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="mt-2"
-                  />
-                </div>
-
-                <div>
                   <Label htmlFor="message">Mensagem</Label>
                   <Textarea
                     id="message"
-                    value={formData.message}
-                    onChange={handleChange}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     required
-                    className="mt-2 min-h-[120px]"
+                    placeholder="Digite sua mensagem aqui..."
+                    className="mt-2 min-h-[150px]"
                   />
                 </div>
 
-                <Button type="submit" variant="hero" className="w-full" size="lg">
-                  Enviar Mensagem
+                <Button type="submit" className="w-full" size="lg">
+                  Enviar via Instagram
                 </Button>
               </form>
             </CardContent>
