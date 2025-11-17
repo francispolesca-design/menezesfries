@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-fries.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -29,14 +29,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="mb-8 inline-block">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-bold text-2xl shadow-lg">
-              M
-            </div>
-            <div className="w-16 h-16 bg-white flex items-center justify-center text-primary font-bold text-2xl shadow-lg" style={{ clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)" }}>
-              F
-            </div>
-          </div>
+          <img 
+            src={logo} 
+            alt="Menezes Fries Logo" 
+            className="w-32 h-32 mx-auto drop-shadow-2xl"
+          />
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
@@ -49,15 +46,6 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
-            variant="hero" 
-            size="lg"
-            onClick={() => scrollToSection("precos")}
-            className="text-lg"
-          >
-            Ver Cardápio
-            <ArrowRight className="ml-2" />
-          </Button>
-          <Button 
             variant="secondary" 
             size="lg"
             onClick={() => scrollToSection("contato")}
@@ -65,18 +53,6 @@ const Hero = () => {
           >
             Entre em Contato
           </Button>
-        </div>
-
-        {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <div className="text-center bg-white/90 rounded-lg p-6 backdrop-blur shadow-lg">
-            <div className="text-4xl font-bold text-primary mb-2">100%</div>
-            <div className="text-sm text-black uppercase tracking-wide font-semibold">Artesanal</div>
-          </div>
-          <div className="text-center bg-white/90 rounded-lg p-6 backdrop-blur shadow-lg">
-            <div className="text-4xl font-bold text-primary mb-2">5★</div>
-            <div className="text-sm text-black uppercase tracking-wide font-semibold">Avaliação</div>
-          </div>
         </div>
       </div>
     </section>
