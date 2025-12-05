@@ -3,8 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 const MenuSection = () => {
   const handleMenuClick = () => {
-    // Coloque aqui o link do seu cardápio
-    window.open("https://seu-cardapio.com", "_blank");
+    window.open("https://menezes-fries.ola.click/products", "_blank");
   };
 
   return (
